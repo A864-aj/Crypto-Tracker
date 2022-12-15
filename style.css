@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{box-sizing: border-box;}
+a{
+    text-decoration: none;
+    color: #ffff;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    margin: 0px;
+}
+
+#main {
+    display: flex;
+    padding: 2%;
+    background-color: #EBEDF5;
+    width: 95%;
+    border-radius: 24px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+#te_xt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 6%;
+    gap: 10px;
+}
+
+#te_xt>h2 {
+    font-family: 'Open Sans', Arial;
+    font-size: 40px;
+    font-weight: 700;
+    color: #7c2ccd;
+    margin: 0px;
+    padding: 0px;
+}
+
+#te_xt>p {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    width: 80%;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(39, 39, 43);
+    margin: 0px;
+    padding: 0px;
+}
+#btn_div{
+    width: 100%;
+    display: flex;
+    justify-items: flex-start;
+    align-items: left;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 6%;
+}
+#btn_main{
+    background-color: #FFBD36;
+    color: rgb(27, 27, 27);
+    font-weight: 500;
+    width: 180px;
+    height: 35px;
+    margin: 0px;
+    padding: 0px;
+}
+.second{
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+}
+table{
+    border-radius: 20px;
+}
+td{
+    background-color: #EBEDF5;
+    border: 1px solid black;
+}
+#footer{
+    color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 5px;
+    background-color: #242227;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_text{
+    margin: 0px;
+    font-family: 'Open Sans', Arial;
+    font-size: 20px;
+}
+/*======================================================*/
+
+@media screen and (max-width:800px) {
+    #main{
+        flex-direction: column;
+        padding: 5%;
+        gap: 30px;
+    }
+    #content{
+        width: 100%;
+        overflow: hidden;
+    }
+    #te_xt{
+        padding: 1%;
+    }
+    #te_xt>h2{
+        font-size: 30px;
+        width: 100%;
+    }
+    #te_xt>p{
+        font-size: 17px;
+        line-height: 25px;
+        width: 100%;
+    }
+    #btn_div{
+        padding: 1%;
+    }
+    #btn_main{
+        width: 160px;
+    }
+    #image{
+        display: flex;
+        justify-content: center;
+    }
+    #illustration{
+        height: 250px;
+        width: 250px;
+    }
+    .second{
+        flex-direction: column;
+        height: 450px;
+    }
+    .chart{
+       width: 100%;
+    }
+    .chart>table{
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+    .footer_text{
+        font-size: 17px;
+    }
+    td{
+        padding: 2px;
+    }
+}
+ 
+@media screen and (max-width:500px) {
+    #main{
+        flex-direction: column;
+        padding: 5%;
+        gap: 30px;
+    }
+    #content{
+        width: 100%;
+        overflow: hidden;
+    }
+    #te_xt{
+        padding: 1%;
+    }
+    #te_xt>h2{
+        font-size: 30px;
+        width: 100%;
+    }
+    #te_xt>p{
+        font-size: 17px;
+        line-height: 25px;
+        width: 100%;
+    }
+    #btn_div{
+        padding: 1%;
+    }
+    #btn_main{
+        width: 160px;
+    }
+    #image{
+        display: flex;
+        justify-content: center;
+    }
+    #illustration{
+        height: 250px;
+        width: 250px;
+    }
+    .second{
+        flex-direction: column;
+        height: 450px;
+    }
+    .chart{
+       padding: 5%;
+    }
+    .chart>table{
+        margin-left: 50px;
+    }
+    .footer_text{
+        font-size: 17px;
+    }
+    td{
+        padding: 2px;
+    }
+}

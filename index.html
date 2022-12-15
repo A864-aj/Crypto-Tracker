@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="bitcoin.png" alt="Logo" width="35" height="31" class="d-inline-block align-text-top">
+                <strong>Crypto Tracker</strong>
+            </a>
+        </div>
+    </nav>
+    <div class="first">
+        <div id="main">
+            <div id="content">
+                <div id="te_xt">
+                    <h2 class="text">PROJECT DESCRIPTION</h2>
+                    <p>This crypto tracker shows the real time data of popular cryptocurrencies like Bitcoin,
+                        Ethereum, Dogecoin, etc. It is coded in HTML 5, CSS 3, and Javascript, with Bootstrap for
+                        the visual design. DOM Manipulation and Ajax techniques were used to retrieve and display
+                        the data.</p>
+                </div>
+                <div id="btn_div"><button class="btn" id="btn_main">Github repo</button></div>
+            </div>
+            <div id="image">
+                <img src="cryptocurrency-rise-5405943-4522757.png" alt="" id="illustration">
+            </div>
+        </div>
+    </div>
+    <div class="second">
+        <div class="container ">
+            <div class="row justify-content-center">
+                <h2 class="col-md-7 text-center">Select Crypto</h2>
+
+                <div class="col-md-6 row justify-content-center mt-3">
+                    <div class="col-10 ">
+                        <form action="" id="searchForm">
+                            <div class="form-row">
+                                <div class="col-12 form-group">
+
+                                    <select name="coinType" id="opt" class="form-control">
+                                        <option value="bitcoin">Bitcoin</option>
+                                        <option value="ethereum">Etherium</option>
+                                        <option value="shiba-inu">Shiba Inu</option>
+                                        <option value="dogecoin">Doge Coin</option>
+                                        <option value="binance-coin">Binance</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="col-12 btn btn-danger mt-3">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+        <script src="app.js"></script>
+        <div class="col-md-6 text-center row justify-content-center chart">
+            <table id="chart" border="1px" class="col-md-8 mt-2 mb-3 table_data">
+
+            </table>
+        </div>
+    </div>
+    <div id="footer">
+        <h3 class="footer_text">Ⓒ Design and Developed by <strong><a href="https://www.linkedin.com/in/anurag-gurjar"
+                    target="_blank">Anurag
+                    Gurjar</a></strong></h3>
+    </div>
+</body>
+
+</html>
